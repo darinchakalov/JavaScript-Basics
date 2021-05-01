@@ -4,7 +4,6 @@ function worldSwimmingRecord(input) {
     let timeInSecondsFor1meter = input[2];
 
     let resistance = Math.floor(lenghtInMeters / 15) * 12.5;
-    console.log(resistance)
     let timeHeDidItIn = lenghtInMeters * timeInSecondsFor1meter + resistance;
     let result = timeHeDidItIn - recordInSeconds;
     if (result < 0) {
