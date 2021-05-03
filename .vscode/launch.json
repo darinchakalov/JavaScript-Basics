@@ -6,7 +6,7 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "${file}",
-            "runtimeExecutable": "/Users/darin.chakalov/bin/nodejs/node-v14.16.1-darwin-x64/bin/node"
+            //"runtimeExecutable": "/Users/darin.chakalov/bin/nodejs/node-v14.16.1-darwin-x64/bin/node"
         },
         {
             "type": "node-terminal",
