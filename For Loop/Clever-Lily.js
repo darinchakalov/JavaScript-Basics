@@ -6,7 +6,7 @@ function cleverLily(input) {
     let sum=0;
     let toysCount =0;
     for (let i = 1; i <= age; i++) {
-        if (i % 2 == 0) {
+        if (i % 2 != 0) {
             toysCount+=1;
         } else{
             sum += moneyPerBirthday
@@ -17,9 +17,9 @@ function cleverLily(input) {
     let moneyFromToys = (toysCount*pricePerToy)
     sum += moneyFromToys;
     if (priceOfWashingMachine < sum) {
-        console.log(`Yes! ${sum - priceOfWashingMachine}`)
+        console.log(`Yes! ${(sum - priceOfWashingMachine).toFixed(2)}`)
     } else {
-        console.log(`No! ${priceOfWashingMachine - sum}`)
+        console.log(`No! ${(priceOfWashingMachine - sum).toFixed(2)}`)
     }
 }
-cleverLily('10','170','6')
+cleverLily(['5','9.99','6.33'])
