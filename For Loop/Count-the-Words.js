@@ -1,6 +1,6 @@
 function countWords(input) {
-    let words = input.length
-    //console.log(words)
+    let lenght = Object.keys(input).length
+    console.log(lenght)
     let count = 0;
     //console.log(words)
     for (i = 0; i < words; i++) {
@@ -15,4 +15,4 @@ function countWords(input) {
         console.log(`The message was sent successfully!`)
     }
 }
-countWords("This message has ten words and you test test can send it!")
+countWords(["This message has ten words and you test test can send it!"])
